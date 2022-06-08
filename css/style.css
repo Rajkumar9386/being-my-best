@@ -358,7 +358,8 @@ footer{
 .week-card span{
     font: 24px 'Open Sans', sans-serif;
     font-weight: 400;
-    color: #E1FFD4;
+    color: #8A8A8A;
+    /* color: #E1FFD4; */
     display: block;
     margin-top: 15px;
 }
@@ -366,8 +367,8 @@ footer{
     margin: 0 auto;
     width: 60%;
 }
-.week-card-wrap.green-border{position: relative;}
-.week-card-wrap.green-border::after{
+.slick-active .week-card-wrap{position: relative;}
+.slick-active .week-card-wrap::after{
     content: ' ';
     width: 100%;
     height: 5px;
@@ -376,13 +377,13 @@ footer{
     bottom: -40px;
 
 }
-.week-card-wrap.green-border .week-card span{
-    color: #000;
+.slick-active .week-card-wrap.green-bg .week-card span{
+    color: #fff;
 }
 .week-card-wrap.disabled .week-card span{
     color: #8A8A8A;
 }
-.green-border{
+.slick-active .week-card-wrap{
     border: 1px solid #4CB71A;
     box-shadow: 0px 3px 20px rgba(65,65,65,16%);
 }
