@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+<!-- <html lang="ar" dir="rtl"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>Being My Best</title>
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav id="header" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid align-items-start">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/header_logo.png" class="img-fluid"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="wellbeing.html">Wellbeing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="productivity.html">Productivity</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Pricing</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="favorite.html">Favorite</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="myaccount.html">My Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-btn yellow-btn" href="registration.html">start now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <!-- Banner Section -->
+        <section id="carouselBanner" class="carousel slide productivity" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/banner/wellbeing_d_banner.png" class="img-fluid banner-img desktop-view" alt="Banner">
+                <img src="img/banner/wellbeing_t_banner.png" class="img-fluid banner-img tab-view" alt="Banner">
+                <img src="img/banner/wellbeing_m_banner.png" class="img-fluid banner-img mobile-view" alt="Banner">
+                <div class="carousel-caption v-center-align">
+                    <p class="carousel-quote-text"><span class="red-text fw-bolder">Enhance Your </span><br/>Wellbeing</p>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <!-- Slider Section -->
+        <section id="slider-section">
+          <div class="container p-0">
+            <div class="week-slider-main px-115">
+                <div class="slider slider-nav" id="weekSlider">
+                    <!-- slide 1 -->
+                    <div class="week-card-container">
+                        <div class="week-card-wrap green-bg">
+                            <div class="week-card">
+                                <img src="img/utility_icons/tick.png" class="tick-img"/>
+                                <span>Week 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 2 -->
+                    <div class="week-card-container">
+                        <div class="week-card-wrap green-border">
+                            <div class="week-card">
+                                <img src="img/utility_icons/unlock.png" class="unlock-img"/>
+                                <span>Week 3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 3 -->
+                    <div class="week-card-container">
+                        <div class="week-card-wrap disabled">
+                            <div class="week-card">
+                                <img src="img/utility_icons/lock.png" class="lock-img"/>
+                                <span>Week 4</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 4 -->
+                    <div class="week-card-container">
+                        <div class="week-card-wrap disabled">
+                            <div class="week-card">
+                                <img src="img/utility_icons/lock.png" class="lock-img"/>
+                                <span>Week 5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 5 -->
+                    <div class="week-card-container">
+                        <div class="week-card-wrap disabled">
+                            <div class="week-card">
+                                <img src="img/utility_icons/lock.png" class="lock-img"/>
+                                <span>Week 6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 6 -->
+                    <div class="week-card-container">
+                        <div class="week-card-wrap disabled">
+                            <div class="week-card">
+                                <img src="img/utility_icons/lock.png" class="lock-img"/>
+                                <span>Week 7</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 7 -->
+                    <div class="week-card-container">
+                        <div class="week-card-wrap disabled">
+                            <div class="week-card">
+                                <img src="img/utility_icons/lock.png" class="lock-img"/>
+                                <span>Week 8</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 8 -->
+                    <div class="week-card-container">
+                        <div class="week-card-wrap disabled">
+                            <div class="week-card">
+                                <img src="img/utility_icons/lock.png" class="lock-img"/>
+                                <span>Week 9</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 9 -->
+                    <div class="week-card-container">
+                        <div class="week-card-wrap disabled">
+                            <div class="week-card">
+                                <img src="img/utility_icons/lock.png" class="lock-img"/>
+                                <span>Week 10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 10 -->
+                    <div class="week-card-container">
+                        <div class="week-card-wrap disabled">
+                            <div class="week-card">
+                                <img src="img/utility_icons/lock.png" class="lock-img"/>
+                                <span>Week 11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-slider-next-prev-wrap">
+                    <button class="week-slider-prev week-slider-nav" type="button" onclick="weekslideGo('-')">
+                        <img src="img/utility_icons/left_arrow.png" class="week-slider-icon" aria-hidden="true"/>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="week-slider-next week-slider-nav" type="button" onclick="weekslideGo('+')">
+                        <img src="img/utility_icons/right_arrow.png" class="week-slider-icon" aria-hidden="true"/>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Audio Section -->
+        <section id="audio-section">
+            <div class="container p-0">
+              <div class="audio-container">
+                <div class="row">
+                  <div class="col-sm-12">
+                      <div class="audio-player">
+                          <div class="custom-audio-player">
+                              <div class="audio-btn-track-wrap">
+                                <button id="playAudio" class="playAudioButton">
+                                  <i class="fa-solid fa-circle-play"></i>
+                                </button>
+                                <span class="productivity-music-name">Knowing Yourself</span>
+                                <span class="audio-duration audio-duration1 tm-view"></span>
+                              </div>
+                              <img src="img/banner-audio.png" class="img-fluid banner-audio-beats"/>
+                              <div class="track-fav-more-wrap">
+                                <span class="audio-duration audio-duration1 desktop-view"></span>
+                                <label for="fav-check1" class="fav-wrapper">
+                                    <input type="checkbox" id="fav-check1" class="fav-input"/>
+                                    <i class="fa-solid fa-heart"></i>
+                                </label>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </div>
+                          </div>
+                          <audio controls id="banner-audio" class="banner-audio-element" src="https://www.kozco.com/tech/piano2-CoolEdit.mp3" type="audio/mpeg">
+                          </audio>
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                      <div class="audio-player">
+                          <div class="custom-audio-player">
+                              <div class="audio-btn-track-wrap">
+                                <button id="playAudio2" class="playAudioButton"><i class="fa-solid fa-circle-play"></i></button>
+                                <span class="productivity-music-name">Self-Esteem</span>
+                                <span class="audio-duration audio-duration2 tm-view"></span>
+                              </div>
+                              <img src="img/banner-audio.png" class="img-fluid banner-audio-beats"/>
+                              <div class="track-fav-more-wrap">
+                                <span class="audio-duration audio-duration2 desktop-view"></span>
+                                <label for="fav-check2" class="fav-wrapper">
+                                    <input type="checkbox" id="fav-check2" class="fav-input"/>
+                                    <i class="fa-solid fa-heart"></i>
+                                </label>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </div>
+                          </div>
+                          <audio controls id="banner-audio2" class="banner-audio-element" src="https://www.kozco.com/tech/piano2-CoolEdit.mp3" type="audio/mpeg">
+                          </audio>
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                      <div class="audio-player">
+                          <div class="custom-audio-player">
+                              <div class="audio-btn-track-wrap">
+                                <button id="playAudio3" class="playAudioButton"><i class="fa-solid fa-circle-play"></i></button>
+                                <span class="productivity-music-name">Emotional Management</span>
+                                <span class="audio-duration audio-duration3 tm-view"></span>
+                              </div>
+                              <img src="img/banner-audio.png" class="img-fluid banner-audio-beats"/>
+                              <div class="track-fav-more-wrap">
+                                <span class="audio-duration audio-duration3 desktop-view"></span>
+                                <label for="fav-check3" class="fav-wrapper">
+                                    <input type="checkbox" id="fav-check3" class="fav-input"/>
+                                    <i class="fa-solid fa-heart"></i>
+                                </label>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </div>
+                          </div>
+                          <audio controls id="banner-audio3" class="banner-audio-element" src="https://www.kozco.com/tech/piano2-CoolEdit.mp3" type="audio/mpeg">
+                          </audio>
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                      <div class="audio-player">
+                          <div class="custom-audio-player">
+                              <div class="audio-btn-track-wrap">
+                                <button id="playAudio4" class="playAudioButton"><i class="fa-solid fa-circle-play"></i></button>
+                                <span class="productivity-music-name">Eating Right & Nutrition (1)</span>
+                                <span class="audio-duration audio-duration4 tm-view"></span>
+                              </div>
+                              <img src="img/banner-audio.png" class="img-fluid banner-audio-beats"/>
+                              <div class="track-fav-more-wrap">
+                                <span class="audio-duration audio-duration4 desktop-view"></span>
+                                <label for="fav-check4" class="fav-wrapper">
+                                    <input type="checkbox" id="fav-check4" class="fav-input"/>
+                                    <i class="fa-solid fa-heart"></i>
+                                </label>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </div>
+                          </div>
+                          <audio controls id="banner-audio4" class="banner-audio-element" src="https://www.kozco.com/tech/piano2-CoolEdit.mp3" type="audio/mpeg">
+                          </audio>
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                      <div class="audio-player">
+                          <div class="custom-audio-player">
+                              <div class="audio-btn-track-wrap">
+                                <button id="playAudio5" class="playAudioButton"><i class="fa-solid fa-circle-play"></i></button>
+                                <span class="productivity-music-name">Exercise for Men</span>
+                                <span class="audio-duration audio-duration5 tm-view"></span>
+                              </div>
+                              <img src="img/banner-audio.png" class="img-fluid banner-audio-beats"/>
+                              <div class="track-fav-more-wrap">
+                                <span class="audio-duration audio-duration5 desktop-view"></span>
+                                <label for="fav-check5" class="fav-wrapper">
+                                    <input type="checkbox" id="fav-check5" class="fav-input"/>
+                                    <i class="fa-solid fa-heart"></i>
+                                </label>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </div>
+                          </div>
+                          <audio controls id="banner-audio5" class="banner-audio-element" src="https://www.kozco.com/tech/piano2-CoolEdit.mp3" type="audio/mpeg">
+                          </audio>
+                      </div>
+                  </div>
+                </div>
+              </div>                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrap container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-logo-wrap">
+              <img src="img/footer_logo.png" class="img-fluid"/>
+              <p class="footer-address">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+              <div class="social-links-wrap desktop-view">
+                <a href="#">
+                  <img src="img/facebook.png" class="img-fluid"/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="footer-grid-cols-5">
+              <div class="footer-nav-links-wrap">
+                <h6>Company</h6>
+                <ul class="footer-nav-wrap">
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">About Us</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Become a Contributor</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Careers</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Blog</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Site Map</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">YouTube Solutions</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-nav-links-wrap">
+                <h6>Plans & Pricing</h6>
+                <ul class="footer-nav-wrap">
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Membership Plans</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Compare Licenses</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-nav-links-wrap">
+                <h6>SUPPORT</h6>
+                <ul class="footer-nav-wrap">
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Contact Us</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">FAQ</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Cue Sheets</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Blog</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Affiliate Program</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Refer & get $25</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Good vibes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-nav-links-wrap">
+                <h6>Quick links</h6>
+                <ul class="footer-nav-wrap">
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Privacy Policy</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Terms of Use</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Individual License</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-item-link">Business License</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="copyright-wrap">
+          <div class="social-links-wrap tm-view">
+            <a href="#">
+              <img src="img/facebook.png" class="img-fluid"/>
+            </a>
+          </div>
+          <p>Copyright © 2022 Being My Best</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <!-- Navbar toggling class -->
+    <script>
+      $(window).scroll(function() {    
+        console.log("Wellbeing")
+        var scroll = $(window).scrollTop();
+        if (scroll >= 500) {
+            $("#header").addClass("lightHeader");
+            $(".navbar-brand").addClass("sm-logo");
+            $("#header .container-fluid").removeClass("align-items-start");
+        } else if (scroll < 500){
+            $("#header").removeClass("lightHeader");
+            $(".navbar-brand").removeClass("sm-logo");
+            $("#header .container-fluid").addClass("align-items-start");
+        }
+      });
+
+      $(".navbar-toggler").click(function(){
+        $(".navbar-toggler-icon").toggleClass("close");
+      });
+
+        // Favorite icon
+        $(".fav-wrapper").change(function(){
+            $(this).find('.fa-heart').toggleClass('active');
+        });
+    </script>
+
+    <!-- Audio Player 1-->
+    <script>
+        document.getElementById("playAudio").addEventListener("click", function(){
+            var audio = document.getElementById('banner-audio');
+            if(this.className == 'is-playing'){
+                this.className = "";
+                this.innerHTML = '<i class="fa-solid fa-circle-play"></i>'
+                audio.pause();
+            }else{
+                this.className = "is-playing";
+                this.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
+                audio.play();
+            }
+            audio.addEventListener("timeupdate", function(){
+                tt = "0";
+                var Amin = Math.floor(audio.currentTime/60);
+
+                var Asec = Math.floor(audio.currentTime - Amin * 60);
+
+                if(Asec < 10){
+                    Asec = "0" + Asec;
+                }
+                if(Amin > 10){
+                    tt="";
+                }
+                $('.audio-duration1').text(tt+Amin+":"+Asec);
+            });
+        });
+        $( document ).ready(function() {
+            var audio = document.getElementById('banner-audio');
+            audio.onloadedmetadata = function() {
+                tt = "0";
+                var Amin = Math.floor(audio.duration/60);
+
+                var Asec = Math.floor(audio.duration - Amin * 60);
+
+                if(Asec < 10){
+                    Asec = "0" + Asec;
+                }
+                if(Amin > 10){
+                    tt="";
+                }
+                $('.audio-duration1').text(tt+Amin+":"+Asec);
+            };
+        });
+    </script>
+
+    <!-- Audio Player 2-->
+    <script>
+        document.getElementById("playAudio2").addEventListener("click", function(){
+            var audio = document.getElementById('banner-audio2');
+            if(this.className == 'is-playing'){
+                this.className = "";
+                this.innerHTML = '<i class="fa-solid fa-circle-play"></i>'
+                audio.pause();
+            }else{
+                this.className = "is-playing";
+                this.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
+                audio.play();
+            }
+            audio.addEventListener("timeupdate", function(){
+                tt = "0";
+                var Amin = Math.floor(audio.currentTime/60);
+
+                var Asec = Math.floor(audio.currentTime - Amin * 60);
+
+                if(Asec < 10){
+                    Asec = "0" + Asec;
+                }
+                if(Amin > 10){
+                    tt="";
+                }
+                $('.audio-duration2').text(tt+Amin+":"+Asec);
+            });
+        });
+        $( document ).ready(function() {
+            var audio = document.getElementById('banner-audio2');
+            audio.onloadedmetadata = function() {
+                tt = "0";
+                var Amin = Math.floor(audio.duration/60);
+
+                var Asec = Math.floor(audio.duration - Amin * 60);
+
+                if(Asec < 10){
+                    Asec = "0" + Asec;
+                }
+                if(Amin > 10){
+                    tt="";
+                }
+                $('.audio-duration2').text(tt+Amin+":"+Asec);
+            };
+        });
+    </script>
+
+    <!-- Audio Player 3-->
+    <script>
+        document.getElementById("playAudio3").addEventListener("click", function(){
+            var audio = document.getElementById('banner-audio3');
+            if(this.className == 'is-playing'){
+                this.className = "";
+                this.innerHTML = '<i class="fa-solid fa-circle-play"></i>'
+                audio.pause();
+            }else{
+                this.className = "is-playing";
+                this.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
+                audio.play();
+            }
+            audio.addEventListener("timeupdate", function(){
+                tt = "0";
+                var Amin = Math.floor(audio.currentTime/60);
+
+                var Asec = Math.floor(audio.currentTime - Amin * 60);
+
+                if(Asec < 10){
+                    Asec = "0" + Asec;
+                }
+                if(Amin > 10){
+                    tt="";
+                }
+                $('.audio-duration3').text(tt+Amin+":"+Asec);
+            });
+        });
+        $( document ).ready(function() {
+            var audio = document.getElementById('banner-audio3');
+            audio.onloadedmetadata = function() {
+                tt = "0";
+                var Amin = Math.floor(audio.duration/60);
+
+                var Asec = Math.floor(audio.duration - Amin * 60);
+
+                if(Asec < 10){
+                    Asec = "0" + Asec;
+                }
+                if(Amin > 10){
+                    tt="";
+                }
+                $('.audio-duration3').text(tt+Amin+":"+Asec);
+            };
+        });
+    </script>
+
+    <!-- Audio Player 4-->
+    <script>
+        document.getElementById("playAudio4").addEventListener("click", function(){
+            var audio = document.getElementById('banner-audio4');
+            if(this.className == 'is-playing'){
+                this.className = "";
+                this.innerHTML = '<i class="fa-solid fa-circle-play"></i>'
+                audio.pause();
+            }else{
+                this.className = "is-playing";
+                this.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
+                audio.play();
+            }
+            audio.addEventListener("timeupdate", function(){
+                tt = "0";
+                var Amin = Math.floor(audio.currentTime/60);
+
+                var Asec = Math.floor(audio.currentTime - Amin * 60);
+
+                if(Asec < 10){
+                    Asec = "0" + Asec;
+                }
+                if(Amin > 10){
+                    tt="";
+                }
+                $('.audio-duration4').text(tt+Amin+":"+Asec);
+            });
+        });
+        $( document ).ready(function() {
+            var audio = document.getElementById('banner-audio4');
+            audio.onloadedmetadata = function() {
+                tt = "0";
+                var Amin = Math.floor(audio.duration/60);
+
+                var Asec = Math.floor(audio.duration - Amin * 60);
+
+                if(Asec < 10){
+                    Asec = "0" + Asec;
+                }
+                if(Amin > 10){
+                    tt="";
+                }
+                $('.audio-duration4').text(tt+Amin+":"+Asec);
+            };
+        });
+    </script>
+
+    <!-- Audio Player 2-->
+    <script>
+        document.getElementById("playAudio5").addEventListener("click", function(){
+            var audio = document.getElementById('banner-audio5');
+            if(this.className == 'is-playing'){
+                this.className = "";
+                this.innerHTML = '<i class="fa-solid fa-circle-play"></i>'
+                audio.pause();
+            }else{
+                this.className = "is-playing";
+                this.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
+                audio.play();
+            }
+            audio.addEventListener("timeupdate", function(){
+                tt = "0";
+                var Amin = Math.floor(audio.currentTime/60);
+
+                var Asec = Math.floor(audio.currentTime - Amin * 60);
+
+                if(Asec < 10){
+                    Asec = "0" + Asec;
+                }
+                if(Amin > 10){
+                    tt="";
+                }
+                $('.audio-duration5').text(tt+Amin+":"+Asec);
+            });
+        });
+        $( document ).ready(function() {
+            var audio = document.getElementById('banner-audio5');
+            audio.onloadedmetadata = function() {
+                tt = "0";
+                var Amin = Math.floor(audio.duration/60);
+
+                var Asec = Math.floor(audio.duration - Amin * 60);
+
+                if(Asec < 10){
+                    Asec = "0" + Asec;
+                }
+                if(Amin > 10){
+                    tt="";
+                }
+                $('.audio-duration5').text(tt+Amin+":"+Asec);
+            };
+        });
+    </script>
+
+
+
+    <!-- Slick Slider -->
+    <script>
+        $('#weekSlider').slick({
+          autoplay: false,
+          speed: 1000,
+          variableWidth: true,
+          centerMode: false,
+          centerPadding: "15"
+        });
+     
+        function weekslideGo(dir) {
+          let slider = $('#weekSlider');
+          if(dir === "+") {
+            slider.slick('slickNext');
+          } else if ( dir === "-" ) {
+            slider.slick('slickPrev');
+          }
+        }
+    </script>
+
+</body>
+</html>
