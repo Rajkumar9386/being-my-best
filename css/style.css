@@ -296,7 +296,7 @@ footer{
     background-color: #000;
 }
 .footer-wrap{
-    padding: 70px 150px 20px 150px;
+    padding: 40px 150px 20px 150px;
 }
 .footer-grid-cols-5{
     display: grid;
@@ -335,8 +335,34 @@ footer{
     font: 13px 'Open Sans', sans-serif;
 }
 .footer-nav-item{margin-bottom: 4px;}
-
-
+.social-links-wrap.desktop-view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 20px;
+}
+.social-links-wrap img{
+    width: 30px;
+}
+.footer-logo-wrap{
+    text-align: center;
+}
+.footer-links-wrap{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    gap: 12px;
+    padding-left: 40px;
+}
+.footer-link {
+    color: #707070;
+    font: 13px 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer-links-wrap span{padding-bottom: 3px;}
 
 /* Productivity */
 .week-card-wrap{
