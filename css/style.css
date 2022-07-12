@@ -444,11 +444,19 @@ footer{
     font: 26px 'Manrope', sans-serif;
     color: #626C78;
 }
-#audio-section .banner-audio-beats{width: 95%;}
+#audio-section .banner-audio-beats{
+    /* width: 95%; */
+    width: 50%;
+    margin: 0 auto;
+}
 #audio-section .custom-audio-player{
-    display: grid;
-    grid-template-columns: 40% 40% 20%;
+    /* display: grid;
+    grid-template-columns: 40% 40% 20%; */
+    position: relative;
+    display: flex;
+    align-items: center;
     text-align: right;
+    border: none;
 }
 .custom-audio-player .fa-heart{
     font-size: 24px;

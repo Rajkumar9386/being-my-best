@@ -257,11 +257,17 @@
 @media (max-width: 575.98px) {
     #audio-section .custom-audio-player{grid-template-columns: 100%;}
     #audio-section .custom-audio-player{padding-top: 35px;}
-    #audio-section .banner-audio-beats{
+    /* #audio-section .banner-audio-beats{
         width: 64%;
         position: absolute;
         top: 50px;
         right: 16px;
+    } */
+    #audio-section .fav-audio-container .track-fav-more-wrap{
+        gap: 10px;
+    }
+    #audio-section .track-fav-more-wrap .fav-wrapper {
+        margin-right: 5px;
     }
     .audio-container {
         padding: 50px 30px;
