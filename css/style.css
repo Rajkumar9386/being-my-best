@@ -515,7 +515,8 @@ footer{
 #auth-section{
     width: 40%;
     margin: 0 auto;
-    transform: translateY(40%);
+    margin-top: 170px;
+    /* transform: translateY(40%); */
 }
 .or-text{
     font: 12px 'Manrope', sans-serif;
