@@ -177,6 +177,7 @@
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    main{overflow-x: hidden;}
     .mobile-view, .view-more-btn{display: block;}
     #slider-section .px-115{
         padding-left: 0px;
