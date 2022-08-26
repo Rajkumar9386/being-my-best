@@ -130,7 +130,10 @@
                                                     </audio>
                                                     <span class="productivity-music-name">Self Self-Motivation Personal Portraits</span>
                                                 </div>
-                                                <img src="img/abeats.png" class="img-fluid banner-audio-beats"/>
+                                                <!-- <img src="img/abeats.png" class="img-fluid banner-audio-beats"/> -->
+                                                <div class="audio-progress banner-audio-beats last" style="height: 5px; background: #ccc;border-radius: 50px">
+                                                    <div class="audio-progress-inner" style="height: 100%; background: salmon; width: 0%;"></div>
+                                                </div>
                                                 <div class="track-fav-more-wrap">
                                                     <span class="audio-duration audio-duration1">00:00</span>
                                                     <label for="fav-check1" class="fav-wrapper">
@@ -159,7 +162,10 @@
                                                     </audio>
                                                     <span class="productivity-music-name">Self Self-Motivation Personal Portraits</span>
                                                 </div>
-                                                <img src="img/abeats.png" class="img-fluid banner-audio-beats"/>
+                                                <!-- <img src="img/abeats.png" class="img-fluid banner-audio-beats"/> -->
+                                                <div class="audio-progress banner-audio-beats last" style="height: 5px; background: #ccc;border-radius: 50px">
+                                                    <div class="audio-progress-inner" style="height: 100%; background: salmon; width: 0%;"></div>
+                                                </div>
                                                 <div class="track-fav-more-wrap">
                                                     <span class="audio-duration audio-duration2">00:00</span>
                                                     <label for="fav-check2" class="fav-wrapper">
@@ -188,7 +194,10 @@
                                                     </audio>
                                                     <span class="productivity-music-name">Self Self-Motivation Personal Portraits</span>
                                                 </div>
-                                                <img src="img/abeats.png" class="img-fluid banner-audio-beats"/>
+                                                <!-- <img src="img/abeats.png" class="img-fluid banner-audio-beats"/> -->
+                                                <div class="audio-progress banner-audio-beats last" style="height: 5px; background: #ccc;border-radius: 50px">
+                                                    <div class="audio-progress-inner" style="height: 100%; background: salmon; width: 0%;"></div>
+                                                </div>
                                                 <div class="track-fav-more-wrap">
                                                     <span class="audio-duration audio-duration3">00:00</span>
                                                     <label for="fav-check3" class="fav-wrapper">
@@ -217,7 +226,10 @@
                                                     </audio>
                                                     <span class="productivity-music-name">Self Self-Motivation Personal Portraits</span>
                                                 </div>
-                                                <img src="img/abeats.png" class="img-fluid banner-audio-beats"/>
+                                                <!-- <img src="img/abeats.png" class="img-fluid banner-audio-beats"/> -->
+                                                <div class="audio-progress banner-audio-beats last" style="height: 5px; background: #ccc;border-radius: 50px">
+                                                    <div class="audio-progress-inner" style="height: 100%; background: salmon; width: 0%;"></div>
+                                                </div>
                                                 <div class="track-fav-more-wrap">
                                                     <span class="audio-duration audio-duration4">00:00</span>
                                                     <label for="fav-check4" class="fav-wrapper">
@@ -303,6 +315,21 @@
                 // $('.audio-duration1').text(tt+Amin+":"+Asec);
                 var audioDuration = $(this).parent().parent().find('.audio-duration')
                 audioDuration.text(tt+Amin+":"+Asec);
+
+                // progress bar
+                var progressBar = $(this).parent().parent().find('.audio-progress .audio-progress-inner');
+                var totalTime = Math.floor(audio.currentTime / audio.duration * 100)
+                $(progressBar).css("width", totalTime + "%");
+
+                // Add Play Button
+                if(totalTime === 100){
+                    var playPauseButton = $(this).prev();
+                    playPauseButton.removeClass('is-playing')
+                    if(playPauseButton.children().hasClass('fa-circle-pause')){
+                        playPauseButton.children().addClass('fa-circle-play')
+                        playPauseButton.children().removeClass('fa-circle-pause')
+                    }
+                }
                 
                 // console.log($(this).parent().parent().find('.audio-duration')[0])
             });

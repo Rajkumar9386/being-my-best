@@ -284,6 +284,14 @@ nav.navbar{
     display: block;
     margin-top: 20px;
 }
+.audio-dropdown{
+    color: #000;
+    text-decoration: none;
+}
+.audio-dropdown::after{
+    display: none;
+}
+.audio-progress-inner{border-radius: 50px;}
 
 /* Promo Section */
 #promo-section{
